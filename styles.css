@@ -1,6 +1,7 @@
 .body {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
 }
 
 .task2 {
