@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Week10</title>
+  </head>
+  <body class="body">
+    <div class="task2">
+      <h2 class="h2">Задание 2</h2>
+      <div class="buttons">
+        <button id="previous" class="button" onclick="showImageN()">
+          Previous
+        </button>
+        <button id="next" class="button" onclick="showImageP()">Next</button>
+      </div>
+      <img src="clickN.png" alt="Index finger" id="image" class="image" />
+    </div>
+    <hr />
+    <div class="task-star">
+      <h2 class="h2">Задание под звёздочкой</h2>
+      <div class="result">
+        <span class="note"
+          >Посмотреть результат в
+          <span class="underlined">модальном окне</span></span
+        >
+        <button
+          class="button button_big"
+          onclick="alert(calculateTotalPrice())"
+        >
+          Общая стоимость
+        </button>
+      </div>
+      <div>
+        <hr />
+      </div>
+      <div class="result">
+        <span class="note"
+          >Посмотреть результат на
+          <span class="underlined">странице</span></span
+        >
+        <button class="button button_big" onclick="showPriceOnPage()">
+          Общая стоимость
+        </button>
+      </div>
+      <div class="cost">
+        <span id="cost">???</span>
+      </div>
+      <button class="button button_small" onclick="clearField()">
+        Очистить поле
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
